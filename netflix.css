@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: black;
+    color: white;
+}
+
+h2{
+    font-size: 6.2vh;
+    font-weight: bolder;
+}
+
+h3{
+    font-size: 3.2vh;
+    font-weight: 400;
+}
+
+h4{
+    font-size: 2.6vh;
+    font-weight: 300;
+}
+
+p{
+    font-size: 3.2vh;
+    font-weight: 400;
+}
+
+
+/* .first{
+    height: 80vh;
+} */
+
+.header{
+    width: 100%;
+    height: 94vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.3)), url(images/header-image.png);
+    /* background-image: url(images/header-image.png); */
+    background-size: cover;
+    background-position: center;
+    padding: 10px 12%;
+    position: relative;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0px;
+
+}
+
+.logo {
+    height: 6vh;
+}
+
+.button {
+    display: flex;
+    gap: 20px;
+}
+.button1 {
+    background: transparent;
+    height: 4.8vh;
+    color: rgb(123, 99, 99);
+    justify-content: space-around;
+    border: 0.3px solid gray;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;  
+    padding: 0px 20px 0px 10px;
+}
+
+.button1:hover {
+    border: 2px solid gray;
+}
+
+.internet {
+    height: 2.4vh;
+    color: white;
+    border-radius: 50%;
+}
+
+.down-icon {
+    height: 0.7vh;
+}
+
+.button2 {
+    height: 4.8vh;
+    padding : 0px 18px;
+    border: 0.1px solid red;
+    border-radius: 5px;
+    background-color: rgb(255, 0, 0, 1);
+    color: white;
+}
+
+.button2:hover {
+    cursor: pointer;
+    background-color: rgb(255, 0, 0, 0.8);
+
+}
+
+.sub-header {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.form {
+    display: flex;
+    gap: 10px;
+}
+
+.email {
+    color: white;
+    background: transparent;
+    height: 7vh;
+    padding:0px 170px 0px 20px;
+    border: 0.3px solid gray;
+    border-radius: 5px;
+}
+
+.email::placeholder {
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(197, 195, 195);
+}
+
+.button3 {
+    height: 7vh;
+    padding : 0px 25px;
+    border: 0.1px solid red;
+    border-radius: 5px;
+    background-color: rgb(255, 0, 0, 1);
+    color: white;
+}
+
+.button3:hover {
+    cursor: pointer;
+    background-color: rgb(255, 0, 0, 0.8);
+}
+
+.line {
+    height: 1vh;
+    background-color: rgb(45, 44, 44);
+}
+
+.featuretext {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.featureimg {
+    background-size: cover;
+    height: 55vh;
+}
+
+.section1 {
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 12%;
+
+}
+
+.section2 {
+    height: 75vh;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 12%;
+
+}
+
+.about {
+    height: fit-content;
+    padding: 50px 12% 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.question {
+    background-color: rgb(45, 44, 44);
+    padding: 0px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.question:hover {
+    background-color:rgb(66, 65, 65);
+}
+
+.question span {
+    font-size: 60px;
+    font-weight: 10;
+}
+ 
+.icon {
+    transition: transform 0.6s ;
+}
+.icon.active{
+    transform: rotate(45deg);
+}
+
+
+.answer{
+    background-color: rgb(45, 44, 44);
+    padding: 0px 25px;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.6s;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.about .form .email {
+    border: 0.3px solid green;
+    background-color: rgb(18, 24, 31);
+}
+
+.footer{
+    /* height: 50vh; */
+    padding: 60px 12%;
+    display: flex;
+    flex-direction:column;
+    gap: 25px;
+}
+
+.call {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.footer h4 {
+    font-size: 15px;
+}
+.call span {
+    font-size: 15px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.links {
+    display: flex;
+    /* gap: 250px; */
+    justify-content: space-between;
+}
+.links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.links ul li {
+    list-style: none;
+}
+
+.links ul li a {
+    color: rgb(208, 206, 206);
+    font-size: 13px;
+}
+
